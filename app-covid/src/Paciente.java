@@ -28,7 +28,7 @@ public class Paciente extends Conta {
     }
 
     public void visualizarInformacoes() {
-        System.out.println("Informações sobre " + this.nome);
+        System.out.println("\nInformações sobre " + this.nome);
         System.out.println("CPF: " + this.cpf);
         System.out.println("Telefone: " + this.telefone);
         System.out.println("Estado: " + this.estado);

@@ -11,7 +11,7 @@ public class Consulta {
 
     public Data getDataConsulta() { return dataConsulta; }
 
-    public boolean isStatusConsulta() { return statusConsulta; }
+    public boolean getStatusConsulta() { return statusConsulta; }
 
     public Consulta(Paciente paciente, Data dataConsulta) {
         this.paciente = paciente;
@@ -22,5 +22,21 @@ public class Consulta {
     public void marcarConcluida(boolean pacienteInfectado) {
         this.paciente.setPacienteInfectado(pacienteInfectado);
         this.statusConsulta = true;
+    }
+
+    public void setStatusConsulta(boolean statusConsulta) {
+        this.statusConsulta = statusConsulta;
+    }
+
+    public String getDiaConsulta(){
+        return (this.dataConsulta).getDia();
+    }
+
+    public String getMesConsulta(){
+        return (this.dataConsulta).getMes();
+    }
+
+    public String getAnoConsulta(){
+        return (this.dataConsulta).getAno();
     }
 }
